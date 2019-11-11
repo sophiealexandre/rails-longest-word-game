@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<h1>Games#new</h1>
+<p>Find me in app/views/games/new.html.erb</p>
+
+
+
+
+<% @values.each do |value| %>
+<button type="button" class="btn btn-primary">
+<p>
+<%= value%>
+</p>
+ </button>
+<% end %>
+<br>
+<br>
+<p>What is your word?</p>
+<form action=“./score”>
+ <input type=“text” name =“yourword”>
+ <input type= submit>
+</form>
